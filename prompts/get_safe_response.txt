@@ -1,0 +1,8 @@
+You receive a multi-turn conversation data. The answer against the last user query contains unsafe knowledge, and it can be misused for {user_q}. 
+Your task is to replace the unsafe answer with a safe one. In your safe answer, you should first explain why the query is  is unsafe and then refuse to answer this query.
+
+Previous user queries: {prev_qs}.
+The last user query: {cur_q}.
+The unsafe answer to the last user query: {cur_a}.
+
+Only return your safe answer to the last user query and make it consistent with normal conversation.

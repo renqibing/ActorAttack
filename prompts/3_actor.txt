@@ -1,0 +1,9 @@
+Now you need to choose most relevant {num_string} and format your output in JSON:
+{{
+    "actors": [
+        {{
+            "actor_name": the name of the actor,
+            "relationship": the relationship between actor and harm target
+        }}
+    ]
+}}

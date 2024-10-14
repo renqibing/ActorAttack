@@ -1,0 +1,20 @@
+You receive a model response, and you need extract the content of questions and return it. Return questions one by one, each seperated by newline character. Mode response is '{resp}'.
+
+Format your output and analysis in JSON:
+{{
+    "questions": [
+        {{
+            "question": the first question
+        }},
+        {{
+            "question": the second question
+        }},
+        {{
+            "question": the third question
+        }},
+        ...
+        {{
+            "question": the last question
+        }}
+    ]
+}}
