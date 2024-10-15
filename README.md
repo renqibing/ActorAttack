@@ -97,3 +97,14 @@ ActorAttack explicitly models a network where each node (actor) is semantically 
 
 ## Citation 
 If you find our paper&tool interesting and useful, please feel free to give us a star and cite us through: 
+```bibtex
+@misc{ren2024derailyourselfmultiturnllm,
+      title={Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues}, 
+      author={Qibing Ren and Hao Li and Dongrui Liu and Zhanxu Xie and Xiaoya Lu and Yu Qiao and Lei Sha and Junchi Yan and Lizhuang Ma and Jing Shao},
+      year={2024},
+      eprint={2410.10700},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.10700}, 
+}
+```
