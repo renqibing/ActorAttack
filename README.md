@@ -86,7 +86,7 @@ As shown in the figure, we expose a significant safety vulnerability of LLMs in 
 <div align="center">
   <img src="paper/intro.png" alt="Logo" width="750">
 </div>
-ActorAttack explicitly models a network where each node (actor) is semantically linked with the harmful target. These actors and their relationships with the harmful target constitute our attack clues. We automate the discovery of attack clues by leveraging the knowledge of LLMs.
+ActorAttack explicitly models a network where each node (actor) is semantically linked with the harmful target. These actors and their relationships with the harmful target constitute our attack clues. We automate the discovery of attack clues by leveraging the knowledge of LLMs. Based on the attack clues, ActorAttack first infers the attack chain, then generates multi-turn jailbreak queries following the attack chain.
 
 ## 📃Results 
 
