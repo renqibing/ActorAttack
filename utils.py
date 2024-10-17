@@ -48,7 +48,7 @@ initialize_clients()
 
 def get_client(model_name):
     """Select appropriate client based on the given model name."""
-    if 'gpt' in model_name:
+    if 'gpt' in model_name or 'o1-'in model_name:
         client = clients.get('gpt') 
     elif 'claude' in model_name:
         client = clients.get('claude')
@@ -99,10 +99,16 @@ def gpt_call(client, query: Union[List, str], model_name = "gpt-4o", temperature
         messages = [{"role": "user", "content": query}]
     for _ in range(3):
         try:
-            completion = client.chat.completions.create(
-                model=model_name,
-                messages=messages,
-                temperature=temperature
+            if 'o1-' in model_name:
+                completion = client.chat.completions.create(
+                    model=model_name,
+                    messages=messages
+                )
+            else:
+                completion = client.chat.completions.create(
+                    model=model_name,
+                    messages=messages,
+                    temperature=temperature
                 )
             resp = completion.choices[0].message.content
             return resp
