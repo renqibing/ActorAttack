@@ -2,7 +2,7 @@
     <h2>
       💥Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues<br><br>
      <a href="https://arxiv.org/abs/2407.09121"> <img alt="paper link" src="https://img.shields.io/badge/Paper-arXiv-red"> </a>
-     <a href="https://huggingface.co/Youliang"> <img alt="model link" src="https://img.shields.io/badge/Data-SafeMTData-blue"> </a> 
+     <a href="https://huggingface.co/datasets/SafeMTData/SafeMTData"> <img alt="model link" src="https://img.shields.io/badge/Data-SafeMTData-blue"> </a> 
     </h2>
 </div>
 
