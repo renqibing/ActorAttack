@@ -101,7 +101,7 @@ class PreAttack:
         json_data["data"] = futures
         if not os.path.exists('./pre_attack_result'):
             os.makedirs('./pre_attack_result')
-        file_path = f'./pre_attack_result/queries_for_{self.model_name.split("/")[-1].replace(".", "-")}_{num}_{datetime.now()}.json'
+        file_path = f'./pre_attack_result/queries_for_{self.model_name.split("/")[-1].replace(".", "-")}_{num}_{datetime.now().strftime("%Y-%m-%d_%H:%M:%S")}.json'
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(json_data, f, ensure_ascii=False, indent=4)
         return file_path
